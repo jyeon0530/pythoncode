@@ -1,0 +1,47 @@
+<html>
+<head>
+<!--<script src = 'jquery-3.5.1.js'></script>-->
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>>
+<script>
+   // $("*").css("border","1px solid blue");
+  
+//     $(document).ready()(function() {
+//     $("h2").css("border","1px solid blue");
+//    });
+
+//    $(function() {
+//        $("h3").css("border", '1px solid red');
+//    });
+
+
+    $(function() {
+        $(".cls3, .cls4").css("border", '1px solid red');
+    });
+    
+    $(function() {
+        $("#dt1 span").css("border", '1px solid green').css("background","blue").css("font-size","30px");
+    });
+    
+
+
+</script>
+
+</head>
+<body>
+<h1>제이쿼리</h1>
+<h2 id="dt1">직접 선택자 및 <span>관계</span> 선택자</h2>
+<h3 class="cls3">직접 선택자</h3>
+<h4 class="cls4">관계 선택자</h4>
+<div id = "wrap">
+<p class="txt1">내용1</p> 
+<div id ="box">내용2 </div>   
+</div>
+
+</body>
+
+
+
+</html>

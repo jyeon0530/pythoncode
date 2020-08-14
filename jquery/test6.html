@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>>
+    
+    <script>
+
+        var arr=["내용1","내용2","내용3","내용4","내용5"];
+        var obj1 = {
+            title : "타이틀 입니다.",
+            list: arr
+        };
+
+    
+    $(function(){
+        console.log(obj1.title);
+        console.log(obj1.list[1]);
+    });
+
+
+    function showData(){
+        $("#list").empty();
+
+        $("#title").text(obj1.title);
+        for (var i=0; i<obj1.list.length;i++){
+            var li = obj1.list[i];
+            $("#list").append("<li>"+li+"</li>");
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="ip1">
+    <button  onclick="showData()">데이터표시</button>
+
+    <br/>타이틀: <div id="title"></div>
+    <ul id="list">
+
+
+
+    </ul>
+
+<!-- 
+    <ul id="m">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+        <li>내용6</li>
+        <li>내용7</li>
+        <li>내용8</li>
+        <li>내용9</li>
+        <li>내용10</li>
+    </ul> -->
+
+
+
+</body>
+</html>

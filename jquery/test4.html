@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script>
+        // var c = confirm("당신의 의사가 맞습니까?");
+        // alert(c);
+        // var ip1 = prompt("애국가를 입력");
+        // var ip2 = prompt('찾고자하는 단어:');
+
+        // if(ip2 == null){
+        //     alert("찾고자하는 값이 입력되지 않았습니다.");
+        // }
+        // else if (ip1.indexOf(ip2)>=0){
+        //     alert("당신이 찾고자하는 단어" + ip2 + "는 존재합니다.");
+
+        // }
+        // else {
+        //     alert("찾고자하는 단어가 없음!");
+        // }
+        
+        // setTimeout(function(){
+        //     alert("3초후에 실행 됨");
+        // },3000);
+            function showMsg(msg1, msg2){
+                alert(msg1 + msg2);
+            }
+
+            function showDefMsg(){
+                alert("디폴트 메세지를 표시합니다.");
+                return 100;
+            }
+            //onload body태그가 로딩이 완료되었을 때
+            //이벤트 선언 
+            window.onload = function() {
+                console.log("onload 실행 됨");
+               // showMsg("메시지1","메세지2");
+               // var rtn = showDefMsg();
+                //console.log(rtn);
+                setTimeout(showDefMsg, 2000);
+                
+            };
+
+    </script>
+</head>
+
+
+</html>

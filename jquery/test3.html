@@ -1,0 +1,48 @@
+<html>
+    <script>
+       document.write("<table border='1'>")
+            for(var i =0; i<=4; i++){
+                document.write("<tr>");
+                 for(var j=1; j<=5; j++){
+                    document.write("<td>");
+                    document.write(i*5+j); 
+                    document.write("</td>");
+                 }
+                 document.write("</tr>");
+            }
+        document.write("</table>");
+
+            var dt = new Date();
+            console.log(dt.getFullYear());
+            console.log(dt);
+
+            document.write(Math.random()*10);  
+            document.write("<br/>")
+
+            var num =['사당','구로','역삼'];
+          
+            for(var i=0; i<num.length;i++){
+                document.write(num[i]+"<br/>");
+            }
+
+            var ss='안녕하세요?반갑습니다?나는 홍길동'
+            var re = ss.split("?");
+            for(var i=0; i<re.length;i++){
+                document.write(re[i]+"<br/>");
+            }
+
+            var name = prompt('애국가 1절을 쓰시오?');
+            
+            var search = prompt('찾으려고 하는 문자를 입력:');
+            var name_re = name.split(" ");
+            console.log(name_re);
+            console.log(search);
+
+            for(var i=0; i<name_re.length; i++){
+                if(search  == name_re[i] )
+                    document.write('문자열 일치');
+                
+            }
+
+    </script>
+</html>
